@@ -11,6 +11,11 @@ app.get('/', function(req, res) {
 	res.send('hello world');
 })
 
+
+app.get('/giphy', function(req, res) {
+	res.send('this is giphy url');
+})
+
 app.listen(port, function() {
 	console.log('listening on port ' + port);
 });
